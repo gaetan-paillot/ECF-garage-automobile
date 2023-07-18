@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avis/commentaires</title>
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img
+        class="logo"
+        src="./Assets/Logo garage.jpg"
+        height="200px"
+        alt="Logo"
+      />
+      <nav>
+        <ul class="menu">
+          <li>
+            <a href="index.html">Présentation</a>
+          </li>
+          <li>
+            <a href="prestations.html">Nos prestations</a>
+          </li>
+          <li>
+            <a href="véhicules.html">Vehicules d'occasion</a>
+          </li>
+          <li>
+            <a href="commentaires.html">Avis/commentaires</a>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="title">Avis/commentaires</h1>
+      <form method="POST" action="action.php">
+        <fieldset>
+          <div>
+            <label for="Mr" class="inline-label">Monsieur</label>
+            <input type="radio" id="Mr" name="civilite" value="Mr" />
+          </div>
+          <div>
+            <label for="Mme" class="inline-label">Madame</label>
+            <input type="radio" id="Mme" name="civilite" value="Mme" />
+          </div>
+
+          <label for="name">Nom</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="saisissez votre nom"
+          />
+
+          <label for="firstName">Prénom</label>
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            required
+            placeholder="saisissez votre prénom"
+          />
+          <label for="comment">Commentaire</label>
+          <textarea
+            rows="10"
+            id="comment"
+            name="comment"
+            placeholder="ajoutez un commentaire pertinent"
+          ></textarea>
+          <h6>Note:</h6>
+          <i class="star">&#9733;</i>
+          <i class="star">&#9733;</i>
+          <i class="star">&#9733;</i>
+          <i class="star">&#9733;</i>
+          <i class="star">&#9733;</i>
+          <div>
+            <button type="submit">Soumettre votre avis</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

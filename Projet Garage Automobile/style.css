@@ -1,0 +1,139 @@
+body{
+font-family: lato, sans empattement;
+min-height: 100vh;
+background: url(Assets/car-engine-1548434_1280.jpg) center/cover;
+
+}
+.container{
+
+    min-height: 100vh;
+    min-width: 95%;
+    background: rgba(207, 206, 206, 0.815);
+    margin: 0 auto;
+    border: 2px solid rgb(8, 69, 236);
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0px 0px 10px 2px blue;
+    padding: 15px;
+
+}
+
+
+/********** header **********/
+.header{
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+.logo{
+    width: 200px;
+    border-radius: 100px;
+}
+.title{
+    text-decoration: underline;
+    text-shadow: 2px 2px 3px rgba(60, 72, 235, 0.788);
+    color: rgb(0, 0, 252);
+    text-align: center;
+}
+.connexion{
+width: 100px;
+height: 50px;
+border-radius: 30% 30% ;
+background-color: rgb(0, 0, 252);
+color: white;
+}
+ .connexion:hover{
+    background-color: rgba(24, 41, 196, 0.795);
+ }
+li{
+    list-style: none;
+}
+
+.menu{
+    border: 1px solid;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    justify-content: space-evenly;
+    background-color:  rgb(0, 0, 252);
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+/*********** main **********/
+.presentation{
+    border: 1px solid black;
+    margin: 20px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    border-radius: 20px;
+}
+h4{
+    text-align:center;
+    text-decoration: underline;
+}
+/********** footer *********/
+
+.horaires thead{
+    background-color:rgb(0, 0, 252);
+    color: white;
+}
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact, th, td{
+    border: 2px none;
+}
+.contact a{
+    text-decoration: none;
+}
+.contact thead{
+    background-color: none;
+    text-decoration: underline;
+    color: black;
+}
+/**********Formulaire de contact**********/
+form {
+    max-width: 50%;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+label.inline-label {
+    display: inline-block;
+}
+
+form input, form select, form textarea {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 80%;
+}
+
+form input[type="radio"],
+form input[type="checkbox"],
+form input[type="submit"] {
+    width: auto;
+}
+
+button{
+    padding: 10px;
+    margin-top: 15px;
+}
+/**********Etoiles**********/
+.star{
+    font-size: 1.5rem;
+}
+.hover{
+    color: rgb(255, 196, 0);
+}
